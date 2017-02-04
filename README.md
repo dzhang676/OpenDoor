@@ -1,2 +1,2 @@
 # Open-Door
-Web app to monitor and track professor's office hourse
+Web app to monitor and track professor's office hours
