@@ -75,8 +75,8 @@
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Manage Professors</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">map</i>Map View</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">book</i>Calender View</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">book</i></a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">settings</i>Settings</a>
         </nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
         <br></br>
@@ -101,7 +101,7 @@
     </tr>
     <tr>
       <td class="mdl-data-table__cell--non-numeric"><font color = #009999> Ivkovic </font> </td>
-      <td class="mdl-data-table__cell--non-numeric"> <font color = #009999> <font size = 2> I'm an hourr late</font> </font></td>
+      <td class="mdl-data-table__cell--non-numeric"> <font color = #009999> <font size = 2> I'm an hour late</font> </font></td>
     </tr>
   </tbody>
 </table>
