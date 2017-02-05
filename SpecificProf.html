@@ -1,0 +1,237 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      https://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Open Door</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="OpenDoorCSS.txt">. -->
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+     
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="demo-drawer-header">
+          <div class="demo-avatar-dropdown">
+            <br> </br>
+            <span><font size= 5><font color = white><font face = "Century Gothic"> &nbsp; &nbsp; &nbsp; Open Door </font></font> </font></span>
+            <br> </br>
+            <div class="mdl-layout-spacer"></div>
+            
+          </div>
+        </header>
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Manage Professors</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">book</i>Calender View</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">settings</i>Settings</a>
+        </nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+        <br></br>
+        <span><font size= 5><font color = white><font face = "Century Gothic"> &thinsp; &thinsp; Announcements </font></font> </font></span> 
+        <p class="half-line">&nbsp;</p>
+        
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp mdl-color--blue-grey-800">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric"> <font color = white> Professor </font></th>
+      <th class="mdl-data-table__cell--non-numeric"><font color = white> Announcement </font></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric"> <font color = #009999> Birkett </font></td>
+      <td class="mdl-data-table__cell--non-numeric"> <font color = #009999> <font size = 2> No office hours </font> </font></td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric"> <font color = #009999> Kofman </font> </td>
+      <td class="mdl-data-table__cell--non-numeric"> <font color = #009999> <font size = 2> New office hours </font> </font></td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric"><font color = #009999> Ivkovic </font> </td>
+      <td class="mdl-data-table__cell--non-numeric"> <font color = #009999> <font size = 2> I'm an hour late</font> </font></td>
+    </tr>
+  </tbody>
+</table>
+      
+
+          </a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-grid demo-content">
+          <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--12-col">
+
+          <!-- Wide card with share menu button -->
+<style>
+.demo-card-wide.mdl-card {
+  width: 550px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url(' http://wallpapercave.com/wp/pwQ4lPy.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+</style>
+
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">SYDE 114 - S. Birkett</h2>
+  </div>
+  </p>
+  <span style="font-size: 30px"><font face = "Century Gothic" style = "margin-left: 16px"> Office Hours:</font></font></span> 
+  <div class="mdl-card__supporting-text">
+    <span style="font-size: 20px"><font face = "Century Gothic" style = "margin-left: 16px"> Monday</font></font></span> 
+    </p>
+    <span style="font-size: 18px"><font face = "Century Gothic" style = "margin-left: 40px"> <span style = "color:black"> 4:00pm - 6:00pm</font></font></span></span> 
+    </p>
+    <span style="font-size: 20px"><font face = "Century Gothic" style = "margin-left: 16px"> Wednesday</font></font></span> 
+    </p>
+    <span style="font-size: 18px"><font face = "Century Gothic" style = "margin-left: 40px"> <span style = "color:black"> 11:30am - 12:30pm</font></font></span></span> 
+    </p>
+    <span style="font-size: 20px"><font face = "Century Gothic" style = "margin-left: 16px"> Friday</font></font></span> 
+</p>
+    <span style="font-size: 18px"><font face = "Century Gothic" style = "margin-left: 40px"> <span style = "color:black"> 4:00pm - 5:00pm</font></font></span></span> 
+    </p>
+  </div>
+  <div class="mdl-card__supporting-text">
+
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+    <span style = "text-transform: lowercase"> <span style="font-size: 15px"> 
+      email: sbirkett@uwaterloo.ca
+    </span>
+    </span>
+    </a>
+  </div>
+</div>
+               <!-- try to make a table for annoncements!-->
+<style>
+.demo-list-three {
+  width: 550px;
+  background-color: rgb(225,230,234);
+  border: 1px solid rgb(72,169,192);
+}
+</style>
+
+      <ul class="demo-list-three mdl-list">
+      <li class="mdl-list__item mdl-list__item--three-line">
+      <span style="font-size: 40px"><b> <span style = "color: rgb(58,70,79)">Announcements</b></span> </span>   
+    </span>
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+    <span style="background-color: rgb(235,240,244)">
+      <span style="font-size: 20px">[January/15/2017] 4:00pm</span>  </span>  
+      <span class="mdl-list__item-text-body">
+        No office hours this week.
+    </span>
+    </span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons" style = "color:rgb(50,147,170)">star</i></a>
+    </span>
+  </li>
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+    <span style="background-color: rgb(235,240,244)">
+      <span style="font-size: 20px">[January/22/2017] 9:00pm</span> 
+      <span class="mdl-list__item-text-body">
+        The TA will be holding an extra exam review session today at 2:00pm in E5 6002.
+      </span>
+      </span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons" style = "color:rgb(240,240,250)">star</i></a>
+    </span>
+  </li>
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+    <span style="background-color: rgb(235,240,244)">
+      <span style="font-size: 20px">[February/2/2017] 3:40pm</span> 
+      <span class="mdl-list__item-text-body">
+        I will be in my office for the first hour -- if no one shows up, I will leave at 5:00pm.
+      </span>
+      </span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons" style = "color:rgb(240,240,250)">star</i></a>
+    </span>
+  </li>
+</ul>
+    </div>
+  </body>
+</html>
+
+            <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
+              <use xlink:href="#chart" />
+            </svg>
+            <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
+              <use xlink:href="#chart" />
+            </svg>
+          </div>
+          <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+            <div class="demo-separator mdl-cell--1-col"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+
+ 
+
