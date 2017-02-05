@@ -33,7 +33,7 @@
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
 
-    <link rel="shortcut icon" href="images/favicon.png"> 
+    <link rel="shortcut icon" href="images/favicon.png">
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <link rel="stylesheet" type="text/css" href="OpenDoorCSS.txt">.
+    
     <style>
     #view-source {
       position: fixed;
@@ -126,30 +127,72 @@
       <th><font size="5"><font color = #009999>Status</font></font></th>
       <th><font size="5"><font color = #009999>Toggle</font></font></th>
       
-    </tr> 
+    </tr>
   </thead>
   <tbody>
     <tr>
-      <td class="mdl-data-table__cell--non-numeric"><font size="4"> <a href="file:///C:/Users/Melissa%20Liu/Documents/OPENDOOR/SpecificProf.html" style="text-decoration:none; color: black">Stephen Birkett</a> </font> </td>
+      <td class="mdl-data-table__cell--non-numeric"><font size="4"> <a href="http://youtube.com" style="text-decoration:none; color: black">Stephen Birkett</a> </font> </td>
       <td><font size="4">SYDE 114</font></td>
       <td><font size="4">E5 604 </font></td>
-      <td><font size="4">Check In</font></td>
-      <td><font size="4">Available</font></td>
+      <td><font size="4">
+        <div class="mdl-cell--4-col">
+         <div align = "center"><!-- Flat button -->
+<button class="mdl-button mdl-js-button" onclick="checkinstudent()">
+  Check In
+</button>
+</div>
+          </div>
+      </font></td>
+      <td><p id="birkettStatus">Available</p></td>
       <td><font size="4">Message</font></td>
     </tr>
     <tr>
       <td class="mdl-data-table__cell--non-numeric"><font size="4"> Igor Ivkovic </font></td>
       <td><font size="4">BME 101</font></td>
       <td><font size="4">E5 606</font></td>
-      <td><font size="4">Check In</font></td>
+      <td><font size="4">
+        <div class="mdl-cell--4-col">
+         <div align = "center"><!-- Flat button -->
+<button class="mdl-button mdl-js-button">
+  Check In
+</button>
+</div>
+          </div>
+      </font></td>
       <td><font size="4">Available</font></td>
       <td><font size="4">Message</font></td>
     </tr>
     <tr>
+
+
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC3mq8GoVIYRSDMCDtqPEMd837Kizv2EzA",
+    authDomain: "opendoor-acf3a.firebaseapp.com",
+    databaseURL: "https://opendoor-acf3a.firebaseio.com",
+    storageBucket: "opendoor-acf3a.appspot.com",
+    messagingSenderId: "903661368930"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="app.js"></script>
+
+
       <td class="mdl-data-table__cell--non-numeric"><font size="4"> Thomas Willett </font></td>
       <td><font size="4">BME 182</font></td>
       <td><font size="4">E5 609 </font></td>
-      <td><font size="4">Check In</font></td>
+      <td><font size="4">
+        <div class="mdl-cell--4-col">
+         <div align = "center"><!-- Flat button -->
+<button class="mdl-button mdl-js-button">
+  Check In
+</button>
+</div>
+          </div>
+      </font></td>
       <td><font size="4">Currently with student</font></td>
       <td><font size="4">Message</font></td>
     </tr>
@@ -157,7 +200,15 @@
       <td class="mdl-data-table__cell--non-numeric"><font size="4"> George Freeman </font></td>
       <td><font size="4">BME 121</font></td>
       <td><font size="4">Not in office</font></td>
-      <td><font size="4">Check In</font></td>
+      <td><font size="4">
+        <div class="mdl-cell--4-col">
+         <div align = "center"><!-- Flat button -->
+<button class="mdl-button mdl-js-button">
+  Check In
+</button>
+</div>
+          </div>
+      </font></td>
       <td><font size="4">Not in office</font></td>
       <td><font size="4">Message</font></td>
     </tr>
@@ -165,7 +216,15 @@
       <td class="mdl-data-table__cell--non-numeric"><font size="4"> Alexander Wong</font> </td>
       <td><font size="4">BME 122</font></td>
       <td><font size="4">Not in office</font></td>
-      <td><font size="4">Check In</font></td>
+      <td><font size="4">
+        <div class="mdl-cell--4-col">
+         <div align = "center"><!-- Flat button -->
+<button class="mdl-button mdl-js-button">
+  Check In
+</button>
+</div>
+          </div>
+      </font></td>
       <td><font size="4">Not in office</font></td>
       <td><font size="4">Message</font></td>
     </tr>
@@ -173,7 +232,15 @@
       <td class="mdl-data-table__cell--non-numeric"><font size="4"> Patricia Comeau</font> </td>
       <td><font size="4">BME 186</font></td>
       <td><font size="4">E5 621 </font></td>
-      <td><font size="4">Check In</font></td>
+      <td><font size="4">
+        <div class="mdl-cell--4-col">
+         <div align = "center"><!-- Flat button -->
+<button class="mdl-button mdl-js-button">
+  Check In
+</button>
+</div>
+          </div>
+      </font></td>
       <td><font size="4">Currently with student</font></td>
       <td><font size="4">Message</font></td>
     </tr>
@@ -181,7 +248,15 @@
       <td class="mdl-data-table__cell--non-numeric"><font size="4"> Chris Schaffhouser</font> </td>
       <td><font size="4">SYDE 112</font></td>
       <td><font size="4">E5 601 </font></td>
-      <td><font size="4">Check In</font></td>
+      <td><font size="4">
+        <div class="mdl-cell--4-col">
+         <div align = "center"><!-- Flat button -->
+<button class="mdl-button mdl-js-button">
+  Check In
+</button>
+</div>
+          </div>
+      </font></td>
       <td><font size="4">Available</font></td>
       <td><font size="4">Message</font></td>
     </tr>
@@ -189,7 +264,15 @@
       <td class="mdl-data-table__cell--non-numeric"> <font size="4"> Austin Atmaja </font></td>
       <td><font size="4">Foosball</font></td>
       <td><font size="4"> BME Lounge </font></td>
-      <td><font size="4">Check In</font></td>
+      <td><font size="4">
+        <div class="mdl-cell--4-col">
+         <div align = "center"><!-- Flat button -->
+<button class="mdl-button mdl-js-button">
+  Check In
+</button>
+</div>
+          </div>
+      </font></td>
       <td><font size="4">Available</font></td>
       <td><font size="4">Message</font></td>
     </tr>
@@ -197,7 +280,15 @@
       <td class="mdl-data-table__cell--non-numeric"> <font size="4"> Catherine Burns </font></td>
       <td><font size="4">BME 162</font></td>
       <td><font size="4"> Not in office </font></td>
-      <td><font size="4">Check In</font></td>
+      <td><font size="4">
+        <div class="mdl-cell--4-col">
+         <div align = "center"><!-- Flat button -->
+<button class="mdl-button mdl-js-button">
+  Check In
+</button>
+</div>
+          </div>
+      </font></td>
       <td><font size="4">Not in office</font></td>
       <td><font size="4">Message</font></td>
     </tr>
@@ -205,7 +296,15 @@
       <td class="mdl-data-table__cell--non-numeric"> <font size="4"> David Zhang </font></td>
       <td><font size="4">Failing at Life</font></td>
       <td><font size="4"> CLV Unit 97 </font></td>
-      <td><font size="4">Check In</font></td>
+      <td><font size="4">
+        <div class="mdl-cell--4-col">
+         <div align = "center"><!-- Flat button -->
+<button class="mdl-button mdl-js-button">
+  Check In
+</button>
+</div>
+          </div>
+      </font></td>
       <td><font size="4">Available</font></td>
       <td><font size="4">Message</font></td>
     </tr>
@@ -213,7 +312,15 @@
       <td class="mdl-data-table__cell--non-numeric"> <font size="4"> Melissa Liu </font></td>
       <td><font size="4">Words with Friends</font></td>
       <td><font size="4"> CLV Unit 27 </font></td>
-      <td><font size="4">Check In</font></td>
+      <td><font size="4">
+        <div class="mdl-cell--4-col">
+         <div align = "center"><!-- Flat button -->
+<button class="mdl-button mdl-js-button">
+  Check In
+</button>
+</div>
+          </div>
+      </font></td>
       <td><font size="4">Currently with student</font></td>
       <td><font size="4">Message</font></td>
     </tr>
@@ -221,14 +328,30 @@
       <td class="mdl-data-table__cell--non-numeric"> <font size="4"> Moujan Saderi </font></td>
       <td><font size="4">Healthy Eating and Blankets </font></td>
       <td><font size="4"> CLV Unit 5 </font></td>
-      <td><font size="4">Check In</font></td>
+      <td><font size="4">
+        <div class="mdl-cell--4-col">
+         <div align = "center"><!-- Flat button -->
+<button class="mdl-button mdl-js-button">
+  Check In
+</button>
+</div>
+          </div>
+      </font></td>
       <td><font size="4">Available</font></td>
       <td><font size="4">Message</font></td>
     </tr><tr>
       <td class="mdl-data-table__cell--non-numeric"> <font size="4"> Jeff Luo </font></td>
       <td><font size="4">BME 121 </font></td>
       <td><font size="4"> E2 2103 </font></td>
-      <td><font size="4">Check In</font></td>
+      <td><font size="4">
+        <div class="mdl-cell--4-col">
+         <div align = "center"><!-- Flat button -->
+<button class="mdl-button mdl-js-button">
+  Check In
+</button>
+</div>
+          </div>
+      </font></td>
       <td><font size="4">Available</font></td>
       <td><font size="4">Message</font></td>
     </tr>

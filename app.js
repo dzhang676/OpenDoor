@@ -21,6 +21,8 @@ var profcheckin = document.getElementById("profcheckin");
 
 var profcheckout = document.getElementById("profcheckout");
 
+var birkettStatus = document.getElementById("birkettStatus");
+
 var profStatusRef = firebase.database().ref();
 
 function checkinprof(){
@@ -28,9 +30,22 @@ function checkinprof(){
 }
 
 function checkoutprof(){
-	var profoutRef = firebase.database().ref();
 	profStatusRef.child("Status").set("Not In Office");
 }
+
+function checkinstudent(){
+	profStatusRef.child("Status").set("Currently With Student");
+}
+
+profStatusRef.child("Status").on("value", function(snapshot){
+	console.log(snapshot.val())
+	if(birkettStatus.innerHTML != null){
+		birkettStatus.innerHTML = snapshot.val();
+	}
+});
+
+
+
 
 
 
