@@ -49,6 +49,22 @@
     <link rel="stylesheet" href="styles.css">
 
     <link rel="stylesheet" type="text/css" href="OpenDoorCSS.txt">.
+
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC3mq8GoVIYRSDMCDtqPEMd837Kizv2EzA",
+    authDomain: "opendoor-acf3a.firebaseapp.com",
+    databaseURL: "https://opendoor-acf3a.firebaseio.com",
+    storageBucket: "opendoor-acf3a.appspot.com",
+    messagingSenderId: "903661368930"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="app.js"></script>
+
     <style>
     #view-source {
       position: fixed;
@@ -118,14 +134,14 @@
             <!-- Raised button -->
           <div class="mdl-grid">
           <div class="mdl-cell--4-col">
-          <div align = "center"><button class="mdl-button mdl-js-button mdl-button--raised">
+          <div align = "center"><button class="mdl-button mdl-js-button mdl-button--raised" id = "profcheckin" onclick="checkinprof()">
           <font size = "6">Check In</font>
           </button></div>
           </div>
 
 
           <div class="mdl-cell--4-col">
-         <div align = "center"><button class="mdl-button mdl-js-button mdl-button--raised">
+         <div align = "center"><button class="mdl-button mdl-js-button mdl-button--raised" id = "profcheckout" onclick="checkoutprof()">
           <font size = "6">Check Out</font>
           </button></div>
           </div>
@@ -274,4 +290,4 @@
       </main>
     </div>
   </body>
-</html
+</html>
