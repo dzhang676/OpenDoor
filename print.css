@@ -60,27 +60,23 @@ td
 /* =Classes
 ----------------------------------------------------------------------*/
 
-div.buttons
-{
+div.buttons {
 	display: none;
 }
 
-tr.day
-{
+tr.day {
 	font-size: 9px;
 	height: 90px;
 }
 
-tr.number
-{
+tr.number {
 	font-size: 10px;
 	height: 15px;
 	text-align: right;
 	vertical-align: middle;
 }
 
-th
-{
+th {
 	font-size: 11px;
 	font-variant: small-caps;
 	font-weight: normal;
